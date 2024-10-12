@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'https://skclient.netlify.app', // Replace with your frontend's URL
+    origin: 'https://please-client.vercel.app', // Replace with your frontend's URL
     credentials: true
 }));
 
