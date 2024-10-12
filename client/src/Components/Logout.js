@@ -7,7 +7,7 @@ function Logout({ setIsLoggedIn }) {
     const navigate = useNavigate();
 
     const handleLogout = () => {
-        axios.post("https://please-server.onrender.com/logout", {}, { withCredentials: true })
+        axios.post("https://please-server7.vercel.app/logout", {}, { withCredentials: true })
             .then(response => {
                 if (response.status === 200) {
                     setIsLoggedIn(false);
