@@ -12,7 +12,7 @@ function SignUp(){
 
     const handleSignup = (e) => {
         e.preventDefault();
-        axios.post("https://please-server.onrender.com/signup", { name, email, password })
+        axios.post("https://please-server7.vercel.app/signup", { name, email, password })
             .then(result => {
                 if (result.status === 201) {
                     navigate("/login");
