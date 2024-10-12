@@ -10,7 +10,7 @@ function Login({ setIsLoggedIn, isLoggedIn }) {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.post("https://please-server.onrender.com/login", { email, password }, { withCredentials: true })
+        axios.post("https://please-server7.vercel.app/login", { email, password }, { withCredentials: true })
             .then(result => {
                 if (result.data === "Success") {
                     axios.get('https://please-server.onrender.com/user', { withCredentials: true })
